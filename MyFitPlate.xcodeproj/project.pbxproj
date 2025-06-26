@@ -54,6 +54,7 @@
 		414735632DA7646D002489C6 /* WeightChartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414735622DA7646D002489C6 /* WeightChartViewController.swift */; };
 		41634C942DB843A6006F0832 /* WaterBottleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41634C932DB8439D006F0832 /* WaterBottleShape.swift */; };
 		41634C982DB97912006F0832 /* EditWaterGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41634C972DB97912006F0832 /* EditWaterGoalView.swift */; };
+		41841B8C2E0C2E0D0013B44B /* WatchAppTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41841B8B2E0C2E0D0013B44B /* WatchAppTestView.swift */; };
 		41AE7D792E06DF5F00A1D35B /* WatchPlate Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 41AE7D6F2E06DF5D00A1D35B /* WatchPlate Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		41AE7D8F2E06E64500A1D35B /* PhoneSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41AE7D8E2E06E64500A1D35B /* PhoneSessionManager.swift */; };
 		4B619A942D677DBC00D6C9A8 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B619A932D677DB500D6C9A8 /* APIError.swift */; };
@@ -71,7 +72,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		41AE7D772E06DF5F00A1D35B /* PBXContainerItemProxy */ = {
+		4165A3232E0D792D008ED99C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3EB2976E2CAEEDC90093E1B9 /* Project object */;
 			proxyType = 1;
@@ -149,6 +150,7 @@
 		414735622DA7646D002489C6 /* WeightChartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightChartViewController.swift; sourceTree = "<group>"; };
 		41634C932DB8439D006F0832 /* WaterBottleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterBottleShape.swift; sourceTree = "<group>"; };
 		41634C972DB97912006F0832 /* EditWaterGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWaterGoalView.swift; sourceTree = "<group>"; };
+		41841B8B2E0C2E0D0013B44B /* WatchAppTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchAppTestView.swift; sourceTree = "<group>"; };
 		41AE7D6F2E06DF5D00A1D35B /* WatchPlate Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WatchPlate Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41AE7D8E2E06E64500A1D35B /* PhoneSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneSessionManager.swift; sourceTree = "<group>"; };
 		4B619A932D677DB500D6C9A8 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
@@ -165,8 +167,18 @@
 		4BE768592D51040200EAF4C8 /* FoodDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		415EACBD2E0DA175006AF785 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 41AE7D6E2E06DF5D00A1D35B /* WatchPlate Watch App */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		41AE7D702E06DF5D00A1D35B /* WatchPlate Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "WatchPlate Watch App"; sourceTree = "<group>"; };
+		41AE7D702E06DF5D00A1D35B /* WatchPlate Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (415EACBD2E0DA175006AF785 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "WatchPlate Watch App"; sourceTree = "<group>"; };
 		4BA2DB362D42A24500B6BDED /* MLModel */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = MLModel; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -236,6 +248,7 @@
 				4B750C762D148F5E002AE2FB /* SetHeightView.swift */,
 				3EC693DD2CB83BDC002222C6 /* GoalSettings.swift */,
 				3EC693CC2CB823C1002222C6 /* FoodLogView.swift */,
+				41841B8B2E0C2E0D0013B44B /* WatchAppTestView.swift */,
 				3EC693CA2CB81F8B002222C6 /* NutritionProgressView.swift */,
 				4B619A952D6FAAD000D6C9A8 /* HorizontalBarChartView.swift */,
 				3E7821062CC02423007E219A /* FoodAddOptionView.swift */,
@@ -308,7 +321,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				41AE7D782E06DF5F00A1D35B /* PBXTargetDependency */,
+				4165A3242E0D792D008ED99C /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				4BA2DB362D42A24500B6BDED /* MLModel */,
@@ -450,6 +463,7 @@
 				3EB09F412CC2B0990088C849 /* DailyLogService.swift in Sources */,
 				3EB2978D2CAEEF830093E1B9 /* LoginView.swift in Sources */,
 				3E676A222CDBC2390019DC51 /* CreatePostView.swift in Sources */,
+				41841B8C2E0C2E0D0013B44B /* WatchAppTestView.swift in Sources */,
 				41AE7D8F2E06E64500A1D35B /* PhoneSessionManager.swift in Sources */,
 				3E676A182CCFE4AD0019DC51 /* AppState.swift in Sources */,
 				4B7053FD2D5E4C0F001D9C1C /* ManualFoodEntryView.swift in Sources */,
@@ -478,10 +492,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		41AE7D782E06DF5F00A1D35B /* PBXTargetDependency */ = {
+		4165A3242E0D792D008ED99C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 41AE7D6E2E06DF5D00A1D35B /* WatchPlate Watch App */;
-			targetProxy = 41AE7D772E06DF5F00A1D35B /* PBXContainerItemProxy */;
+			targetProxy = 4165A3232E0D792D008ED99C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -612,16 +626,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEVELOPMENT_ASSET_PATHS = "\"CalorieBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = XMYB49J6UL;
+				DEVELOPMENT_TEAM = YB78MPQG63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalorieBeta/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to scan barcodes.\"\n\"This app requires camera usage to scan barcodes\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -631,7 +650,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.CalorieBeta;
+				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.omar.CalorieBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -652,16 +671,21 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_ASSET_PATHS = "\"CalorieBeta/Preview Content\"";
-				DEVELOPMENT_TEAM = XMYB49J6UL;
+				DEVELOPMENT_TEAM = YB78MPQG63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CalorieBeta/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "\"This app requires camera access to scan barcodes.\"\n\"This app requires camera usage to scan barcodes\"";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -671,7 +695,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 14.5;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.CalorieBeta;
+				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.omar.CalorieBeta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -687,21 +711,22 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchPlate Watch App/WatchPlate Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEVELOPMENT_TEAM = XMYB49J6UL;
+				DEVELOPMENT_TEAM = YB78MPQG63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchPlate;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "MyFitPlate.omar.CalorieBeta\n";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.omar.CalorieBeta.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -711,7 +736,7 @@
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Debug;
 		};
@@ -720,20 +745,21 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "WatchPlate Watch App/WatchPlate Watch App.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XMYB49J6UL;
+				DEVELOPMENT_TEAM = YB78MPQG63;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = WatchPlate;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = "MyFitPlate.omar.CalorieBeta\n";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = .watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = MyFitPlate.omar.CalorieBeta.watchkit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -744,7 +770,7 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				VALIDATE_PRODUCT = YES;
-				WATCHOS_DEPLOYMENT_TARGET = 26.0;
+				WATCHOS_DEPLOYMENT_TARGET = 11.6;
 			};
 			name = Release;
 		};

@@ -81,7 +81,7 @@ struct HomeView: View {
                             .foregroundColor(Color(red: 29/255, green: 33/255, blue: 30/255))
                         
                         
-                        NavigationLink(destination: AIChatBotView()){
+                        NavigationLink(destination: WatchAppTestView()){
                             VStack{
                                 Image(systemName: "message")
                                     .resizable()

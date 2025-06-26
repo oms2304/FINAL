@@ -1,18 +1,40 @@
-//
-//  WatchSessionManager.swift
-//  WatchPlate Watch App
-//
-//  Created by Omar Sabeha on 6/26/25.
-//
+import WatchConnectivity
+import Combine
 
-import SwiftUI
-
-struct WatchSessionManager: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+class WatchSessionManager: NSObject, WCSessionDelegate, ObservableObject {
+    
+    func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+        if let error = error {
+            print("❌ Watch session activation failed: \(error.localizedDescription)")
+        } else {
+            print("✅ Watch session activated with state: \(activationState.rawValue)")
+        }
     }
-}
+    
+    static let shared = WatchSessionManager()
+    
+    @Published var receivedData: [String: Any] = [:]
 
-#Preview {
-    WatchSessionManager()
+    private override init() {
+        super.init()
+        activateSession()
+    }
+
+    func activateSession() {
+        if WCSession.isSupported() {
+            let session = WCSession.default
+            session.delegate = self
+            session.activate()
+        }
+    }
+
+    func session(_ session: WCSession, didReceiveUserInfo userInfo: [String : Any] = [:]) {
+        DispatchQueue.main.async {
+            self.receivedData = userInfo
+            print("⌚ Watch received userInfo: \(userInfo)")
+        }
+    }
+    
+    
+
 }

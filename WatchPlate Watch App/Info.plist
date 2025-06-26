@@ -6,8 +6,8 @@
 	<string>en</string>
 	<key>CFBundleExecutable</key>
 	<string>WatchPlate Watch App</string>
-    <key>CFBundleIdentifier</key>
-    <string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
@@ -21,7 +21,7 @@
 	<key>WKApplication</key>
 	<true/>
 	<key>WKCompanionAppBundleIdentifier</key>
-	<string>MyFitPlate.omar.CalorieBeta</string>
+    <string>MyFitPlate.omar.CalorieBeta</string>
 	<key>WKWatchOnly</key>
 	<false/>
 	<key>UIDeviceFamily</key>

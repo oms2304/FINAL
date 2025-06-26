@@ -267,7 +267,8 @@ struct HomeView: View {
                     "water": log.id,
                     "calories": log.totalMacros()
                 ]
-                PhoneSessionManager.shared.sendDataToWatch(dataToSend)
+                print("📤 Sending data to Watch: \(dataToSend)")
+                PhoneSessionManager.shared.sendInfoToWatch(userInfo:dataToSend)
 
             case .failure(let error):
                 print("❌ Error fetching log for \(self.selectedDateString): \(error.localizedDescription)")
@@ -297,16 +298,16 @@ struct FoodEmojiMapper { /* ... remains the same ... */
 }
 
 // MARK: - HomeView Preview
-//struct HomeView_Previews: PreviewProvider {
-//    @State static var navigateToProfile = false
-//    @State static var showSettings = false
-//
-//    static var previews: some View {
-//        HomeView(
-//            navigateToProfile: $navigateToProfile,
-//            showSettings: $showSettings
-//        )
-//        .environmentObject(GoalSettings())         // ✅ Provide dummy GoalSettings
-//        .environmentObject(DailyLogService()) // ✅ Provide dummy DailyLogService
-//    }
-//}
+struct HomeView_Previews: PreviewProvider {
+    @State static var navigateToProfile = false
+    @State static var showSettings = false
+
+    static var previews: some View {
+        HomeView(
+            navigateToProfile: $navigateToProfile,
+            showSettings: $showSettings
+        )
+        .environmentObject(GoalSettings())         // ✅ Provide dummy GoalSettings
+        .environmentObject(DailyLogService()) // ✅ Provide dummy DailyLogService
+    }
+}

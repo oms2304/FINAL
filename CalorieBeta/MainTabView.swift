@@ -72,11 +72,24 @@ struct MainTabView: View {
                     .foregroundColor(selectedTab == 2 ? Color(red: 67/255, green: 173/255, blue: 111/255) : (colorScheme == .dark ? .white : .black))
             }
             .tag(2)
+            
+            NavigationView {
+                WatchAppTestView()
+                    .navigationTitle("message")
+                    .navigationBarTitleDisplayMode(.inline) // Ensures consistent title display.
+            }
+            .tabItem {
+                Image(systemName: "chart.xyaxis.line")
+                    .foregroundColor(selectedTab == 3 ? Color(red: 67/255, green: 173/255, blue: 111/255) : (colorScheme == .dark ? .white : .black))
+                Text("Weight Chart")
+                    .foregroundColor(selectedTab == 3 ? Color(red: 67/255, green: 173/255, blue: 111/255) : (colorScheme == .dark ? .white : .black))
+            }
+            .tag(3)
         }
         .accentColor(Color(red: 67/255, green: 173/255, blue: 111/255))
         // Apply a background color to the tab bar to ensure it adapts to dark mode.
         .onAppear {
-            PhoneSessionManager.shared.pingWatch()
+//            PhoneSessionManager.shared.pingWatch()
             // Customize the tab bar appearance for dark mode.
             let appearance = UITabBarAppearance()
             appearance.configureWithOpaqueBackground()

@@ -25,7 +25,15 @@ struct CalorieBetaApp: App {
     init() {
         FirebaseApp.configure() // Sets up Firebase with the default configuration.
         let _ = PhoneSessionManager.shared
+        
+        let userInfo: [String: Any] = [
+                    "calories": 1800,
+                    "protein": 120,
+                    "goals": "Lose weight"
+                ]
+                PhoneSessionManager.shared.sendInfoToWatch(userInfo: userInfo)
     }
+    
 
     // MARK: - Body
     
@@ -193,7 +201,7 @@ struct ContentView: View {
                         "water": log.totalCalories(),
                         "calories": log.totalMacros().carbs
                     ]
-                    PhoneSessionManager.shared.sendDataToWatch(dataToSend)
+                    PhoneSessionManager.shared.sendInfoToWatch(userInfo: dataToSend)
 
                 case .failure(let error):
                     print("❌ Error loading user logs: \(error.localizedDescription) at \(Date())")
