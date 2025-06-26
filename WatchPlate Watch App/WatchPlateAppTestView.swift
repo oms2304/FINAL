@@ -70,27 +70,33 @@ struct AIChatBotView: View {
             synthesizer.stopSpeaking(at: .immediate)
         }
         let utterance = AVSpeechUtterance(string: text)
-        utterance.voice = AVSpeechSynthesisVoice(language: "en-US")
-        utterance.rate = 0.5
+        utterance.voice = AVSpeechSynthesisVoice(identifier: "com.apple.ttsbundle.Samantha-premium")
+        utterance.rate = 0.42
+        utterance.pitchMultiplier = 1.05
+        utterance.volume = 1.0
+        
         synthesizer.speak(utterance)
     }
     
 
-    func dictation(){
-        WKExtension.shared().visibleInterfaceController?.presentTextInputController(
-            withSuggestions: nil,
-            allowedInputMode: .plain
-        ) {
-            result in
-            if let response = result as? [String], let first = response.first {
-                DispatchQueue.main.async{
-                    userInput = first
-                    sendMessage()
+    func dictation() {
+        if let controller = WKExtension.shared().visibleInterfaceController {
+            controller.presentTextInputController(
+                withSuggestions: nil,
+                allowedInputMode: .plain
+            ) { result in
+                if let response = result as? [String], let first = response.first {
+                    DispatchQueue.main.async {
+                        userInput = first
+                        sendMessage()
+                    }
                 }
             }
+        } else {
+            print("❌ Could not find visibleInterfaceController")
         }
     }
-    
+
     
     
     func sendMessage() {
